@@ -1,0 +1,17 @@
+{
+  "name": "freelance-rate-mcp",
+  "version": "0.1.0",
+  "description": "Demo MCP server exposing freelance rate calculator tools (calc_rate, rate_raise_email)",
+  "main": "server.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  }
+}

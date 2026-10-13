@@ -1,0 +1,25 @@
+> tools/list
+  - calc_rate: Hourly and day rate needed to hit a target after-tax income. Estimates only.
+  - rate_raise_email: Draft a polite rate-increase email to a client.
+
+> tools/call calc_rate {"targetIncome":70000,"expenses":8000,"taxPct":28,"marginPct":15,"billableHours":1196}
+{
+  "hourly": 102,
+  "day": 612,
+  "grossNeeded": 105222,
+  "billableHours": 1196
+}
+
+> tools/call rate_raise_email {"oldRate":80,"newRate":95,"clientName":"Acme Co","effectiveDate":"November 1","senderName":"Sam"}
+Subject: Updated rates starting November 1
+
+Hi Acme Co,
+
+Thank you for the work we've done together. I want to keep giving your projects the same care and attention.
+
+Starting November 1, my rate will be $95/hour (currently $80/hour, a 19% change). Anything already scheduled before that date stays at the current rate.
+
+If you'd like to lock in upcoming work or discuss a monthly arrangement, just reply and we'll sort it out.
+
+Thanks again,
+Sam
